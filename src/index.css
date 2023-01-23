@@ -1,0 +1,17 @@
+* {
+    margin: 0
+}
+
+body{
+    box-sizing: border-box;
+    font-family: monospace,serif;
+}
+
+nav{
+    padding: 1.5em;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
