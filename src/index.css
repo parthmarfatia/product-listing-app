@@ -15,3 +15,73 @@ nav{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+.nav--logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav--home--icon{
+    margin-right: 0.5em;
+}
+
+.home--container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product--container{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 1em;
+    border: 0.05em solid silver;
+    margin: 0.5em auto;
+    border-radius: 1em;
+}
+
+.product--image{
+    height: 200px;
+    object-fit:cover;
+    object-position:50% 50%;
+}
+
+.product--addToCart{
+    padding: 0.5em;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.product--addToCart:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.product--stock{ 
+    color: red;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.product--info{
+    margin-bottom: auto;
+}
+
+.product--info > *{
+    margin: 0.5em 0;
+}
+
+.product--title{
+    margin-top: 1em;
+}

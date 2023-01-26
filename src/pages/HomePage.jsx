@@ -1,7 +1,14 @@
 import React from "react";
+import { useContext } from "react";
+import { Context } from "../Context";
+import Product from "../components/Product";
 
 const HomePage = () => {
-    return (<div>HomePage</div>)
-}
+  const { data } = useContext(Context);
+  console.log(data);
+  const displayData = data.map((val) => <Product key={val.id} val={val} />);
 
-export default HomePage
+  return <div className="home--container">{displayData}</div>;
+};
+
+export default HomePage;
