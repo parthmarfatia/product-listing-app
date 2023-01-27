@@ -6,7 +6,6 @@ import FilterOptions from "../components/FilterOptions";
 
 const HomePage = () => {
   const { filteredData } = useContext(Context);
-  console.log(filteredData);
   const displayData = filteredData.map((val) => (
     <Product key={val.id} val={val} />
   ));

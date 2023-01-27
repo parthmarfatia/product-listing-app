@@ -29,6 +29,10 @@ a:hover {
     align-items: center;
 }
 
+.nav--cart{
+    text-align: center;
+}
+
 .nav--home--icon{
     margin-right: 0.5em;
 }

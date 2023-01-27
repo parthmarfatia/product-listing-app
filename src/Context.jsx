@@ -13,6 +13,8 @@ function ContextProvider({ children }) {
   const [brand, setBrand] = useState("");
   const [sortData, setSortData] = useState("");
 
+  let [addToCart, setAddToCart] = useState([]);
+
   useEffect(() => {
     async function apiCall() {
       let store = await fetch("https://dummyjson.com/products?limit=100");
@@ -87,9 +89,11 @@ function ContextProvider({ children }) {
         category,
         brand,
         sortData,
+        addToCart,
         setSortData,
         setCategory,
         setBrand,
+        setAddToCart,
       }}
     >
       {children}
