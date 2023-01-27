@@ -2,13 +2,21 @@ import React from "react";
 import { useContext } from "react";
 import { Context } from "../Context";
 import Product from "../components/Product";
+import FilterOptions from "../components/FilterOptions";
 
 const HomePage = () => {
-  const { data } = useContext(Context);
-  console.log(data);
-  const displayData = data.map((val) => <Product key={val.id} val={val} />);
+  const { filteredData } = useContext(Context);
+  console.log(filteredData);
+  const displayData = filteredData.map((val) => (
+    <Product key={val.id} val={val} />
+  ));
 
-  return <div className="home--container">{displayData}</div>;
+  return (
+    <div className="home--container">
+      <FilterOptions />
+      <div className="display--container">{displayData}</div>
+    </div>
+  );
 };
 
 export default HomePage;
